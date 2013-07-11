@@ -18,9 +18,9 @@ namespace PMU.PMUService {
     [System.Runtime.Serialization.DataContractAttribute(Name="PMUServiceDataResult", Namespace="http://schemas.datacontract.org/2004/07/PMU.PMUServices.PMUService.Contracts.Enti" +
         "tites")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.WSBoolean))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.WSInteger))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.WSString))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.WSInteger))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.WSBoolean))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PMU.PMUService.User))]
     public partial class PMUServiceDataResult : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -49,23 +49,23 @@ namespace PMU.PMUService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="WSBoolean", Namespace="http://schemas.datacontract.org/2004/07/PMU.PMUServices.PMUService.Contracts.Enti" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="WSString", Namespace="http://schemas.datacontract.org/2004/07/PMU.PMUServices.PMUService.Contracts.Enti" +
         "tites")]
     [System.SerializableAttribute()]
-    public partial class WSBoolean : PMU.PMUService.PMUServiceDataResult {
+    public partial class WSString : PMU.PMUService.PMUServiceDataResult {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BooleanValueField;
+        private string StringValueField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BooleanValue {
+        public string StringValue {
             get {
-                return this.BooleanValueField;
+                return this.StringValueField;
             }
             set {
-                if ((this.BooleanValueField.Equals(value) != true)) {
-                    this.BooleanValueField = value;
-                    this.RaisePropertyChanged("BooleanValue");
+                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
+                    this.StringValueField = value;
+                    this.RaisePropertyChanged("StringValue");
                 }
             }
         }
@@ -97,23 +97,23 @@ namespace PMU.PMUService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="WSString", Namespace="http://schemas.datacontract.org/2004/07/PMU.PMUServices.PMUService.Contracts.Enti" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="WSBoolean", Namespace="http://schemas.datacontract.org/2004/07/PMU.PMUServices.PMUService.Contracts.Enti" +
         "tites")]
     [System.SerializableAttribute()]
-    public partial class WSString : PMU.PMUService.PMUServiceDataResult {
+    public partial class WSBoolean : PMU.PMUService.PMUServiceDataResult {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private bool BooleanValueField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public bool BooleanValue {
             get {
-                return this.StringValueField;
+                return this.BooleanValueField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((this.BooleanValueField.Equals(value) != true)) {
+                    this.BooleanValueField = value;
+                    this.RaisePropertyChanged("BooleanValue");
                 }
             }
         }

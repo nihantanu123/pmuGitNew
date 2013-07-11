@@ -18,13 +18,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:60956/PMUServiceHost.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="bf52cfa6-2037-43b2-88c6-cd7c3b871ce4" SourceId="1" SourceUrl="http://localhost:60956/PMUServiceHost.svc/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b9702117-ca3f-4610-aaa4-c98982dfdd5b" SourceId="1" SourceUrl="http://localhost:60956/PMUServiceHost.svc/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="0e7ada62-f73e-4568-aa72-5f9c9d7b94fb" SourceId="1" SourceUrl="http://localhost:60956/PMUServiceHost.svc/mex" />
-    <MetadataFile FileName="PMU.PMUServices.PMUService.Contracts.Entitites.xsd" MetadataType="Schema" ID="81275a04-077c-4c6e-b9ab-b8af3e7f07b0" SourceId="1" SourceUrl="http://localhost:60956/PMUServiceHost.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="16ebed53-4070-4e44-952d-c3831f7b91e6" SourceId="1" SourceUrl="http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="74e8d2b5-9a42-4c8e-97c0-e6cc225444f9" SourceId="1" SourceUrl="http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="3535b198-31fc-4028-9e95-848d2366529c" SourceId="1" SourceUrl="http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/mex" />
+    <MetadataFile FileName="PMU.PMUServices.PMUService.Contracts.Entitites1.xsd" MetadataType="Schema" ID="2e784640-8b16-4b34-8ea6-26929da9645f" SourceId="1" SourceUrl="http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

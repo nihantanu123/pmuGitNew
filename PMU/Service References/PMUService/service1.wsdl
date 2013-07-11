@@ -369,9 +369,9 @@
   </wsdl:binding>
   <wsdl:service name="PMUService">
     <wsdl:port name="WSHttpBinding_IPMUService" binding="tns:WSHttpBinding_IPMUService">
-      <soap12:address location="http://localhost:60956/PMUServiceHost.svc/wsHttp" />
+      <soap12:address location="http://nishants7:8078/PMUServiceHost/PMUServiceHost.svc/wsHttp" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:60956/PMUServiceHost.svc/wsHttp</wsa10:Address>
+        <wsa10:Address>http://nishants7:8078/PMUServiceHost/PMUServiceHost.svc/wsHttp</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <Dns>localhost</Dns>
         </Identity>

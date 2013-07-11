@@ -215,7 +215,7 @@ function WCFJSON() {
 function CallService() {
     var uesrName = $('.signUpUserName').val();
     $.ajax({
-        url: "http://localhost:60956/PMUServices/PMUServiceHost.svc/IsUserNameExist",
+        url: "http://192.168.9.32:8078/PMUServiceHost/PMUServiceHost.svc/IsUserNameExist",
         dataType: "json",
         data: '{"userName": "' + uesrName + '"}',
         type: "POST",
@@ -226,14 +226,14 @@ function CallService() {
         success: function (data, st) {
             if (st == 'success') {
                 if (data.Data["IntegerValue"] == 1) {
-                alert(uesrName + " Allready Exist");
-                return false;
-              }
+                    alert(uesrName + " Allready Exist");
+                    return false;
+                }
             }
         },
         error: function (message) {
             //var jsonFault = JSON.parse(message.responseText);
-            alert(jsonFault.Message);
+            //alert(jsonFault.Message);
         }
     });
 }
